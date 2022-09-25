@@ -1,0 +1,127 @@
+/*given below is  a example of   list selectors  */
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+  /* list-style-type: none; */
+}
+
+/*  given below is a example of desendent selector */
+footer p {
+  font-size: 16px;
+}
+
+/* article header p {
+  font-style: italic;
+} */
+
+/* id are always unique but class can be shared among others as well */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* always prefer class over ids as we have to implement it for future work so classes are more useful */
+#ul {
+  list-style-type: none;
+}
+
+/* p {
+  background-color: #f7f7f7;
+  border: 5px solid #1098ad;
+} */
+
+/*pseudo classes they are used for same types of item eg lists dont work
+ well with desendent selectors */
+li:first-child {
+  color: #1098ad;
+}
+li:last-child {
+  color: #1098ad;
+}
+li:nth-child(even) {
+  color: #fff;
+}
+
+article p:last-child {
+  color: red;
+}
+/* styling hyperlink using psuedo classes */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+}
+a:hover {
+  color: yellowgreen;
+  text-decoration: underline dotted olivedrab;
+  font-weight: bold;
+}
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/* style links in lvha : link visted hover active  */
+
+/* resolving conflicts in css selectors and rules used*/
+#copyright {
+  color: red;
+}
+.copyright {
+  color: blue;
+}
+/* both class copyright and text have same priority so last one among them will be applied  */
+.text {
+  color: yellow;
+}
+/* important keywork have highest pirority ammong all selectors but we should not use it */
+footer p {
+  color: forestgreen !important;
+}
