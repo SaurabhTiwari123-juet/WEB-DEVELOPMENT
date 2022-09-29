@@ -1,11 +1,13 @@
 body {
   border: 5px solid black;
   font-family: sans-serif;
+  line-height: 1.4;
 }
 .h1 {
   text-align: center;
   font-style: bold;
   text-transform: uppercase;
+  background-color: #f7f7f7;
 }
 .h3 {
   text-transform: uppercase;
@@ -28,11 +30,12 @@ body {
   text-transform: uppercase;
   font-size: 20px;
   background-color: black;
-  color: blue;
+  color: white;
 }
 
 .button:hover {
   background-color: white;
+  color: black;
 }
 /* 
 .hover:.button:hover {
