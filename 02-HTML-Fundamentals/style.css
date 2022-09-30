@@ -40,6 +40,9 @@ body {
 
 .button {
 }
+li {
+  list-style: square;
+}
 /* 
 .hover:.button:hover {
 } */
