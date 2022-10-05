@@ -4,7 +4,11 @@
 }
 
 /*given below is  a example of   list selectors  */
-
+.main-cointainer {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 h1,
 h2,
 h3,
@@ -135,3 +139,4 @@ footer p {
   color: forestgreen !important;
 }
 /* centreting the element */
+/*  */
