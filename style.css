@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 /*given below is  a example of   list selectors  */
 
 h1,
@@ -40,7 +45,11 @@ p {
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
   /* list-style-type: none; */
+}
+li:last-child {
+  margin-bottom: 0px;
 }
 
 /*  given below is a example of desendent selector */
@@ -125,3 +134,4 @@ a:active {
 footer p {
   color: forestgreen !important;
 }
+/* centreting the element */
